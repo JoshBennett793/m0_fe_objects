@@ -47,8 +47,15 @@ printSecondValue(foods);
 
 // Write code that adds a food to the foods object. 
 // Then, print the updated object:
-// YOUR CODE HERE
 
+function addFood(food) {
+	var newFood = food;
+	foods[newFood] = 0;
+}
+
+addFood("cheese");
+
+console.log(foods);
 
 // -------------------
 // Part 2: Email
