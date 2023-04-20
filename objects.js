@@ -13,26 +13,26 @@ var foods = {
 
 // Write code that prints all of the 'keys' of the foods variable 
 // you created above:
-function printFoods(obj) {
+function printObjectKeys(obj) {
 	var keys = Object.keys(obj);
 	for (var i = 0; i < keys.length; i++) {
-		console.log(`Key ${i}: `, keys[i]);
+		console.log(`Key at index ${i}: `, keys[i]);
 	}
 }
 
-printFoods(foods);
+printObjectKeys(foods);
 
 // Write code that prints all of the 'values' of the foods variable 
 // you created above:
 
-function printFoodQuantity(obj) {
+function printObjectValues(obj) {
 	var values = Object.values(obj);
 	for (var i = 0; i < values.length; i++) {
-		console.log(`Value ${i}: `, values[i]);
+		console.log(`Value at index ${i}: `, values[i]);
 	}
 }
 
-printFoodQuantity(foods);
+printObjectValues(foods);
 
 // Write code that prints the value of the second food of the foods variable 
 // you created above:
