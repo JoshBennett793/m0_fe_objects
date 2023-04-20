@@ -24,6 +24,15 @@ printFoods(foods);
 
 // Write code that prints all of the 'values' of the foods variable 
 // you created above:
+function printFoodQuantity(obj) {
+	var values = Object.values(obj);
+	for (var i = 0; i < values.length; i++) {
+		console.log(`Value ${i}: `, values[i]);
+	}
+}
+
+printFoodQuantity(foods);
+
 // Write code that prints the value of the second food of the foods variable 
 // you created above:
 // YOUR CODE HERE
