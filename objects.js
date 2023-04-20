@@ -145,3 +145,38 @@ console.log(posts[0]);
 // YOU DO: Create an array of at least 3 EMAIL Objects, using the same
 // key-value pairs you used in your email Object above.
 // Then, print the email Array to the Terminal.
+
+var emails = [
+  {
+    senderName: 'Josh',
+    senderEmail: 'josh.email@email.com',
+    recipientName: 'Rachel',
+    recipientEmail: 'rachel.email@email.com',
+    timestamp: '3:00 PM April 20, 2023',
+    message: "It's 5 oclock somewhere.",
+  },
+  {
+    senderName: 'Josh',
+    senderEmail: 'josh.email@email.com',
+    recipientName: 'Rachel',
+    recipientEmail: 'rachel.email@email.com',
+    timestamp: '4:00 PM April 20, 2023',
+    message: "It's almost 5 oclock.",
+  },
+  {
+    senderName: 'Josh',
+    senderEmail: 'josh.email@email.com',
+    recipientName: 'Rachel',
+    recipientEmail: 'rachel.email@email.com',
+    timestamp: '3:00 PM April 20, 2023',
+    message: "Now it's actually 5 oclock.",
+  },
+];
+
+function printMultipleEmails(arr) {
+	for (var i = 0; i < arr.length; i++) {
+		logEmailObject(arr[i]);
+	}
+}
+
+printMultipleEmails(emails);
