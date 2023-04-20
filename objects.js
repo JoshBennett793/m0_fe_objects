@@ -13,12 +13,17 @@ var foods = {
 
 // Write code that prints all of the 'keys' of the foods variable 
 // you created above:
-// YOUR CODE HERE
+function printFoods(obj) {
+	var keys = Object.keys(obj);
+	for (var i = 0; i < keys.length; i++) {
+		console.log(`Key ${i}: `, keys[i]);
+	}
+}
+
+printFoods(foods);
 
 // Write code that prints all of the 'values' of the foods variable 
 // you created above:
-// YOUR CODE HERE
-
 // Write code that prints the value of the second food of the foods variable 
 // you created above:
 // YOUR CODE HERE
